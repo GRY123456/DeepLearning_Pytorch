@@ -1,3 +1,7 @@
-import tensorflow
+import torch
 
-print("test111")
+
+a = torch.Tensor([1, ])
+b = torch.Tensor([1])
+print(a.size())
+print(b.size())
