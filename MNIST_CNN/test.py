@@ -1,7 +1,8 @@
 import torch
 
 
-a = torch.Tensor([1, ])
-b = torch.Tensor([1])
-print(a.size())
-print(b.size())
+x = torch.tensor([[1, 9, 3],
+                  [4, 5, 6]])
+print(x)
+print(x.max(1, keepdim=True))
+print(x.max(1, keepdim=True)[1])
